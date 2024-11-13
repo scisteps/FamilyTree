@@ -1,0 +1,29 @@
+.square-component {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #268ed4; /* Example background color */
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+    color: white; /* Text color inside */
+    font-size: 1.2em; /* Optional font size for text inside */
+}
+.square2 {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #5ada5a; /* Example background color */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+    color: white; /* Text color inside */
+    font-size: 1.2em; /* Optional font size for text inside */
+}

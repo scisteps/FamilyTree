@@ -1,24 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import Flow from './Flow';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Flow2 from './Flow2';
+import Flow3 from './Flow3';
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+
+      {/* <Notification message={weeklyMessage} /> */}
+      
+
+      <Routes>
+        <Route path="/" element={<Flow2 />} />
+      <Route path="/flow" element={<Flow />} />
+      <Route path="/flow2" element={<Flow2 />} />
+      <Route path="/flow3" element={<Flow3 />} />
+
+      </Routes>
     </div>
+  </Router>
   );
 }
 
