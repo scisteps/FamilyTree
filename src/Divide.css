@@ -1,27 +1,54 @@
+/* Divide.css */
+
+.container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align the entire container to the top */
+}
+
+.card-header {
+  background-color: blue;
+  color: white;
+}
+
+.card-body {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Set a height for the card */
+  overflow: auto; /* Allow scrolling inside the card */
+  padding: 20px;
+  border: 1px solid #ddd; /* Optional: Adds a border around the card */
+}
+
 .divide-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-color: #f0f0f0;
-    overflow: hidden;
-  }
-  
-  .box {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: #007bff;
-    border: 1px solid #0056b3;
-    cursor: pointer;
-    transform: translate(-50%, -50%);
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .line {
-    position: absolute;
-    height: 2px;
-    background-color: #000;
-    transform-origin: left center;
-    transition: all 0.5s ease-in-out;
-  }
-  
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  position: absolute;
+  display: flex;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: width 0.3s ease, height 0.3s ease, left 0.3s ease, top 0.3s ease;
+  background-color: white;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.1); /* Box shadow */
+  z-index: 1; /* Default z-index, will be updated on expansion */
+}
+
+.box-title {
+  color: black;
+  font-size: 14px;
+}
+
+.line {
+  position: absolute;
+  background-color: grey;
+  height: 5px;
+  transition: all 2s ease;
+  stroke-width: 3px;
+  border-radius: 2px;
+}
