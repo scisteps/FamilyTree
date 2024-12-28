@@ -8,6 +8,9 @@ import Karl from './Images/thefam/karl.jpg';
 import sam2 from './Images/thefam/sam.jpg';
 import linda from './Images/thefam/Linda.jpg';
 import allan from './Images/thefam/Allan.jpg';
+import joan from './Images/thefam/joan.jpg';
+import paul from './Images/thefam/paul.jpg';
+import brenda from './Images/thefam/brenda.jpg';
 
 const Divide = () => {
   const [boxes, setBoxes] = useState([
@@ -130,6 +133,9 @@ const Divide = () => {
                   : box.title === "Linda" ? linda
                   : box.title === "Allan" ? allan
                   : box.title === "Samuel" ? mered
+                  : box.title === "Paul" ? paul
+                  : box.title === "Brenda" ? brenda
+                  : box.title === "Joan" ? joan
 
                   : null) 
                 : null
