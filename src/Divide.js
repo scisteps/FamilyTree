@@ -11,6 +11,9 @@ import allan from './Images/thefam/Allan.jpg';
 import joan from './Images/thefam/joan.jpg';
 import paul from './Images/thefam/paul.jpg';
 import brenda from './Images/thefam/brenda.jpg';
+import adrian from './Images/thefam/adrian.jpg';
+import bob from './Images/thefam/bob barigye.jpg';
+
 
 const Divide = () => {
   const [boxes, setBoxes] = useState([
@@ -55,6 +58,18 @@ const Divide = () => {
             { id: newBoxIdStart, left: left, top: top + distance, color: '#FE875C', title: `Paul`, clicks: 0, isExpanded: false, image: null },
             { id: newBoxIdStart + 1, left: left + distance, top: top + distance, color: '#715CFE', title: `Joan`, clicks: 0, isExpanded: false, image: null },
             { id: newBoxIdStart + 2, left: left + 2 * distance, top: top + distance, color: '#715CFE', title: `Brenda`, clicks: 0, isExpanded: false, image: null },
+            { id: newBoxIdStart + 3, left: left + 3 * distance, top: top + distance, color: '#715CFE', title: `Adrian`, clicks: 0, isExpanded: false, image: null },
+            { id: newBoxIdStart + 3, left: left + 3 * distance, top: top + distance, color: '#715CFE', title: `Lorna`, clicks: 0, isExpanded: false, image: null },
+
+          ];
+        }
+        else if (clickedBox.title === "Tusiime") {
+          newBoxes = [
+            { id: newBoxIdStart, left: left, top: top + distance, color: '#FE875C', title: `Jonathan`, clicks: 0, isExpanded: false, image: null },
+            { id: newBoxIdStart + 1, left: left + distance, top: top + distance, color: '#715CFE', title: `Brenda`, clicks: 0, isExpanded: false, image: null },
+            { id: newBoxIdStart + 2, left: left + 2 * distance, top: top + distance, color: '#715CFE', title: `Suzan`, clicks: 0, isExpanded: false, image: null },
+            { id: newBoxIdStart + 3, left: left + 3 * distance, top: top + distance, color: '#715CFE', title: `Nelson`, clicks: 0, isExpanded: false, image: null },
+
           ];
         }
         // If clicked box is "Basheizha", create specific new boxes below (Barigye, Karugaba, and Nkurunungi)
@@ -63,6 +78,8 @@ const Divide = () => {
             { id: newBoxIdStart, left: left, top: top + distance, color: '#715CFE', title: `Barigye`, clicks: 0, isExpanded: false, image: null },
             { id: newBoxIdStart + 1, left: left + distance, top: top + distance, color: '#715CFE', title: `Karugaba`, clicks: 0, isExpanded: false, image: null },
             { id: newBoxIdStart + 2, left: left + 2 * distance, top: top + distance, color: '#715CFE', title: `Nkurunungi`, clicks: 0, isExpanded: false, image: null },
+            { id: newBoxIdStart + 3, left: left + 3 * distance, top: top + distance, color: '#715CFE', title: `Tusiime`, clicks: 0, isExpanded: false, image: null },
+
           ];
         }
   
@@ -136,6 +153,9 @@ const Divide = () => {
                   : box.title === "Paul" ? paul
                   : box.title === "Brenda" ? brenda
                   : box.title === "Joan" ? joan
+                  : box.title === "Adrian" ? adrian
+                  : box.title === "Sam" ? sam2
+                  : box.title === "Barigye" ? bob
 
                   : null) 
                 : null
